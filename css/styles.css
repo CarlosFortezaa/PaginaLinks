@@ -1,0 +1,103 @@
+:root{
+    --fuentePrimaria: 'Inter', sans-serif;
+
+    --primario: #C5F82A;
+    --blanco: #FFFFFF;
+    --negro: #141414;
+    --negroClaro: #1f1f1f;
+    --boton: #333333;
+    --botonHover: #4C4C4C;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5% /* 1 rem = 10px */;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuentePrimaria);
+    font-size: 1.4rem;
+    line-height: 2;
+    background-color: var(--negro);
+}
+
+/* GLOBALES */
+
+.contenedor{
+    max-width: 50rem;
+    height: 70rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 8rem;
+    background-color: var(--negroClaro);
+    border-radius: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuentePrimaria);
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 23%;
+    margin-top: 5rem;
+    border-radius: 50%;
+}
+
+
+.botones{
+    text-align: center;
+}
+
+.boton{
+    background-color: var(--boton);
+    text-align: center;
+    color: var(--blanco);
+    padding: 1rem;
+    width: 80%;
+    border-radius: 0.7rem;
+    display: inline-block; /* para botones del mismo tamano, se le pone display: inline-block ya que al "block" se le puede asignar width */
+}
+
+.boton:hover{
+    background-color: var(--botonHover);
+}
+
+/* CONTENEDOR */
+.imagen__contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.texto-principal__contenedor{
+    text-align: center;
+    color: var(--blanco);
+    font-family: var(--fuentePrimaria);
+}
+
+.verde{
+    color: var(--primario);
+}
